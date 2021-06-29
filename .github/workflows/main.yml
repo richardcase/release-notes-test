@@ -1,4 +1,4 @@
-name: pr_size
+name: releasenote
 
 on: [pull_request]
 
@@ -9,6 +9,6 @@ jobs:
     steps:
       - name: Check for release notes
         id: rn
-        uses: richardcase/release-note-action@v0.2.2
+        uses: richardcase/release-note-action@v0.2.3
         with:
-          repo-token: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
