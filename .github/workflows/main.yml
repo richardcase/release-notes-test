@@ -1,4 +1,4 @@
-name: pr_size
+name: releasenote
 
 on: [pull_request]
 
